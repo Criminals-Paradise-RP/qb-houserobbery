@@ -13,11 +13,11 @@ Config.MaximumTime = 22 -- past this time players are unable to start house robb
 Config.MiniGameSettings = {
 
     LockPicking = {        
-        Type = 'lockpick', --type of minigame when lockpicking doors.  [default is lockpick]
+        Type = 't3', --type of minigame when lockpicking doors.  [default is lockpick]
         --use 'lockpick' for qb-lockpick [doesnt have any settings below as its an inbuilt function of qb-lockpick]
         --use 'ps-ui' for ps-ui skillcircle. adjust settings below accordingly for correct minigame type
         --use 'keydrop' for boii_ui keydrop. adjust settings below accordingly for correct minigame type
-        
+        --use 't3' for t3_lockpick
         SkillCircle = {
             Circles = 5, -- amount of circles required to complete minigame
             Time = 10, -- amount of time in MS given to complete minigame
@@ -29,6 +29,14 @@ Config.MiniGameSettings = {
             FallDelay = 3000, --amount of time taken for letters to fall in ms
             NewLetterDelay = 2000, --amount of time take for a new letter to begin to fall
         }, 
+
+        T3Lockpick = {
+            --DONT FORGET TO USE 'D' TO TEST THE PICK STRENGTH.
+
+            Difficulty = 2, -- difficulty level of the lock pick
+            Pins = 5, -- amount of pins needed to pass lock
+            
+        },
     },
 
     Searching = {

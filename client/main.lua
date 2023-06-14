@@ -328,7 +328,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                                 end
                             end, Config.MiniGameSettings.LockPicking.SkillCircle.Circles, Config.MiniGameSettings.LockPicking.SkillCircle.Time)
                         elseif Config.MiniGameSettings.LockPicking.Type == 'keydrop' then
-                            exports['boii_ui']:keydrop(Config.MiniGameSettings.Searching.KeyDrop.ScoreLimit, Config.MiniGameSettings.Searching.KeyDrop.MissLimit, Config.MiniGameSettings.Searching.KeyDrop.FallDelay, Config.MiniGameSettings.Searching.KeyDrop.NewLetterDelay, function(success) --[[callback]]
+                            exports['boii_ui']:keydrop(Config.MiniGameSettings.LockPicking.KeyDrop.ScoreLimit, Config.MiniGameSettings.LockPicking.KeyDrop.MissLimit, Config.MiniGameSettings.LockPicking.KeyDrop.FallDelay, Config.MiniGameSettings.LockPicking.KeyDrop.NewLetterDelay, function(success) --[[callback]]
                                 if success then
                                     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
                                     print("success")
@@ -352,6 +352,30 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                                     print("fail")
                                 end
                             end)
+                        elseif Config.MiniGameSettings.LockPicking.Type == 't3' then
+                            local success = exports["t3_lockpick"]:startLockpick(1.0, Config.MiniGameSettings.LockPicking.T3Lockpick.Difficulty, Config.MiniGameSettings.LockPicking.T3Lockpick.Pins)
+                            if success then
+                                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                                    print("success")
+                                    LockpickDoorAnim()
+                                    TriggerServerEvent('qb-houserobbery:server:enterHouse', closestHouse)
+                                    QBCore.Functions.Notify(Lang:t("success.worked"), "success", 2500)
+                                    if usingAdvanced then
+                                        if math.random(1, 100) < 20 then
+                                            TriggerServerEvent("qb-houserobbery:server:removeAdvancedLockpick")
+                                            TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["advancedlockpick"], "remove")
+                                        end
+                                    else
+                                        if math.random(1, 100) < 40 then
+                                            TriggerServerEvent("qb-houserobbery:server:removeLockpick")
+                                            TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["lockpick"], "remove")
+                                        end
+                                    end
+                            else
+                                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                                QBCore.Functions.Notify(Lang:t("error.didnt_work"), "error", 2500)
+                                print("fail")
+                            end
                         end
                         if math.random(1, 100) <= 85 and not IsWearingGloves() then
                             local pos = GetEntityCoords(PlayerPedId())

@@ -13,7 +13,7 @@ Easily change minigame settings and much more via config.lua
 
 # Lock Picking
 
-Choose betwen qb-lockpick, ps-ui skillcircle or Boii_UI Keydrop for lock picking house doors
+Choose betwen qb-lockpick, ps-ui skillcircle, Boii_UI Keydrop or T3_LockPick for lock picking house doors
 
 # Searching For Items
 
@@ -21,7 +21,7 @@ Choose between qb-skillbar, ps-ui skillcircle or Boii_UI keydrop for searching a
 
 # Dependencies
 
-If you are not using ps-ui or boii_ui then you will need the default dependencies
+If you are not using ps-ui or boii_ui, or t3_lockpick then you will need the default dependencies
 
 qb-lockpick: https://github.com/qbcore-framework/qb-lockpick
 qb-skillbar: https://github.com/qbcore-framework/qb-skillbar
