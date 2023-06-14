@@ -13,7 +13,7 @@ Config.MaximumTime = 22 -- past this time players are unable to start house robb
 Config.MiniGameSettings = {
 
     LockPicking = {        
-        Type = 't3', --type of minigame when lockpicking doors.  [default is lockpick]
+        Type = 'lockpick', --type of minigame when lockpicking doors.  [default is lockpick]
         --use 'lockpick' for qb-lockpick [doesnt have any settings below as its an inbuilt function of qb-lockpick]
         --use 'ps-ui' for ps-ui skillcircle. adjust settings below accordingly for correct minigame type
         --use 'keydrop' for boii_ui keydrop. adjust settings below accordingly for correct minigame type
