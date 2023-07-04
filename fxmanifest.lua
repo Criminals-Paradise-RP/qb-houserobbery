@@ -21,3 +21,10 @@ dependencies { -- if not using either of these then comment out this section
 } --
 
 lua54 'yes'
+
+escrow_ignore {
+    'config.lua',
+    'client/**.lua',
+    'server/**.lua',
+    'locales/**.lua',
+}
