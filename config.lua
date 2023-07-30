@@ -2,7 +2,7 @@ Config = {}
 
 Config.MinZOffset = 45
 
-Config.MinimumHouseRobberyPolice = 0 -- minimum amount of police required for house robberies
+Config.MinimumHouseRobberyPolice = 2 -- minimum amount of police required for house robberies
 
 Config.PoliceNotifyType = 'qb' --support for qb police notification and ps-dispatch. change to 'ps' for ps-dispatch
 
@@ -13,7 +13,7 @@ Config.MaximumTime = 22 -- past this time players are unable to start house robb
 Config.MiniGameSettings = {
 
     LockPicking = {        
-        Type = 'lockpick', --type of minigame when lockpicking doors.  [default is lockpick]
+        Type = 'ps-ui', --type of minigame when lockpicking doors.  [default is lockpick]
         --use 'lockpick' for qb-lockpick [doesnt have any settings below as its an inbuilt function of qb-lockpick]
         --use 'ps-ui' for ps-ui skillcircle. adjust settings below accordingly for correct minigame type
         --use 'keydrop' for boii_ui keydrop. adjust settings below accordingly for correct minigame type
@@ -41,7 +41,7 @@ Config.MiniGameSettings = {
 
     Searching = {
 
-        Type = 'skillbar', --type of minigame when lockpicking doors.  [default is skillbar]
+        Type = 'ps-ui', --type of minigame when lockpicking doors.  [default is skillbar]
         --use 'skillbar' for qb-skillbar. adjust settings below accordingly for correct minigame type
         --use 'ps-ui' for ps-ui skillcircle. adjust settings below accordingly for correct minigame type
         --use 'keydrop' for boii_ui keydrop. adjust settings below accordingly for correct minigame type
@@ -80,19 +80,19 @@ Config.Rewards = { -- rewards pool for tiers, adjust to your server needs
         [1] = {
             ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
             ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter", "phone"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
             ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
         },
         [2] = {
             ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
             ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter", "phone"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
             ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
         },
         [3] = {
             ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
             ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter", "phone"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
             ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
         },
     },        
