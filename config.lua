@@ -2,7 +2,7 @@ Config = {}
 
 Config.MinZOffset = 45
 
-Config.MinimumHouseRobberyPolice = 2 -- minimum amount of police required for house robberies
+Config.MinimumHouseRobberyPolice = 0 -- minimum amount of police required for house robberies
 
 Config.PoliceNotifyType = 'ps' --support for qb police notification and ps-dispatch. change to 'ps' for ps-dispatch
 
@@ -78,22 +78,22 @@ Config.Rewards = { -- rewards pool for tiers, adjust to your server needs
 
     Tiers = {
         [1] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
-            ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope", "flatscreen"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
         },
         [2] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
-            ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
         },
         [3] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "weed_skunk", "bandage", "beer", "fitbit"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "goldchain", "goldbar", "diamond_ring", "rifle_ammo"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "weed_skunk", "lighter"},
-            ["livingroom"] = {"weed_ak47", "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "radio"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
         },
     },        
     
