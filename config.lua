@@ -4,7 +4,7 @@ Config.MinZOffset = 45
 
 Config.MinimumHouseRobberyPolice = 2 -- minimum amount of police required for house robberies
 
-Config.PoliceNotifyType = 'qb' --support for qb police notification and ps-dispatch. change to 'ps' for ps-dispatch
+Config.PoliceNotifyType = 'ps' --support for qb police notification and ps-dispatch. change to 'ps' for ps-dispatch
 
 Config.MinimumTime = 5 -- past this time players are able to start house robberies
 Config.MaximumTime = 22 -- past this time players are unable to start house robberies
@@ -35,7 +35,7 @@ Config.MiniGameSettings = {
 
             Difficulty = 2, -- difficulty level of the lock pick
             Pins = 5, -- amount of pins needed to pass lock
-            
+
         },
     },
 
