@@ -73,27 +73,26 @@ Config.MiniGameSettings = {
 }
 
 
-
 Config.Rewards = { -- rewards pool for tiers, adjust to your server needs
 
     Tiers = {
         [1] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope", "flatscreen"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
-            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope", "flatscreen","trojan_usb", "thermite"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave", "trojan_usb", "thermite"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter", "trojan_usb", "thermite"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker", "trojan_usb", "thermite"},
         },
         [2] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
-            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope", "trojan_usb", "thermite"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave", "trojan_usb", "thermite"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter", "trojan_usb", "thermite"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker", "trojan_usb", "thermite"},
         },
         [3] = {
-            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope"},
-            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave"},
-            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter"},
-            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker"},
+            ["cabin"] = {"diamond_ring", "goldchain", "bandage", "telescope", "trojan_usb", "thermite"},
+            ["kitchen"] = {"10kgoldchain", "rolex", "musicequipment", "diamond_ring", "microwave", "trojan_usb", "thermite"},
+            ["chest"] = {"rolex", "diamond_ring", "goldchain", "pcequipment", "lighter", "trojan_usb", "thermite"},
+            ["livingroom"] = { "rolex", "diamond_ring", "goldchain", "tablet", "pistol_ammo", "coffeemaker", "trojan_usb", "thermite"},
         },
     },        
     
